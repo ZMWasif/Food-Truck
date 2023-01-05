@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Here in this project:
+
+1. We have designed a website where you can find the food reviews of your favourite foods.
+2. We have created two charts showing the investment vs revenue graph and sell vs month graph in the dashboard page.
+3. We have discussed some topics and showed it to our Blogs page.
+4. We have used some animations for a better look.
+
 ## Available Scripts
 
 In the project directory, you can run:
