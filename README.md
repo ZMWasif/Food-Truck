@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Live Site Link: https://sage-licorice-c50029.netlify.app/reviews
+Live Site Link: https://sage-licorice-c50029.netlify.app/
 
 Here in this project:
 
