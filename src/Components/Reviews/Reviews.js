@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
+import "animate.css";
 
 const Reviews = () => {
   const products = [
@@ -49,12 +50,12 @@ const Reviews = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl font-bold font-mono text-yellow-900 pt-8">
+        <h2 className="text-5xl font-bold font-mono text-yellow-900 pt-8 animate__heartBeat">
           This is what our Customers say !!!
         </h2>
       </div>
       <br />
-      <div className="card-group cardgroup-design grid grid-rows-6 grid-flow-col gap-4">
+      <div className="card-group cardgroup-design grid grid-rows-6 grid-flow-col gap-4 animate__animated animate__backInDown">
         {products.map((product) => (
           <Card key={product.id} product={product}></Card>
         ))}

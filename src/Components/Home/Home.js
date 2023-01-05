@@ -3,36 +3,41 @@ import burger from "../../burger.jpg";
 import chicken from "../../chicken.jpg";
 import CardGroup from "../CardGroup/CardGroup";
 import "./Home.css";
+import "animate.css";
 
 const Home = () => {
   return (
     <div>
       <div className="home">
         <section>
-          <img className="burger" src={burger} alt="" />
+          <img
+            className="burger animate__animated animate__fadeInTopLeft"
+            src={burger}
+            alt=""
+          />
         </section>
         <section className="title-description">
           <div>
-            <h1 className="italic hover:not-italic text-8xl font-bold text-yellow-500">
+            <h1 className="italic hover:not-italic text-8xl font-bold text-yellow-500 animate__animated animate__backInLeft">
               Real Flame
             </h1>
           </div>
           <div>
-            <h1 className="italic hover:not-italic text-8xl font-bold text-yellow-700">
+            <h1 className="italic hover:not-italic text-8xl font-bold text-yellow-700 animate__heartBeat">
               Real Flavor
             </h1>
           </div>
           <div>
-            <h1 className="italic hover:not-italic text-8xl font-bold text-yellow-900">
+            <h1 className="italic hover:not-italic text-8xl font-bold text-yellow-900 animate__animated animate__backInRight">
               Real Good
             </h1>
           </div>
           <div className="description">
             <br />
-            <h3 className="font-semibold ">
-              All tasty foods are now at your hand. Choose your ones and keep
-              enjoying the delicious foods. Also if you enjoyed the foods, don't
-              forget to give us your feedbacks !!!
+            <h3 className="font-semibold animate__animated animate__zoomIn">
+              All the tasty foods are now at your hand. Choose your ones and
+              keep enjoying the delicious foods. Also if you enjoyed the foods,
+              don't forget to give us your feedbacks !!!
             </h3>
             <br />
             <button
@@ -44,7 +49,11 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <img className="chicken" src={chicken} alt="" />
+          <img
+            className="chicken animate__animated animate__fadeInTopRight"
+            src={chicken}
+            alt=""
+          />
         </section>
       </div>
       <CardGroup></CardGroup>

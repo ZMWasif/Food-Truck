@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Card from "../Card/Card";
 import "./CardGroup.css";
+import "animate.css";
 
 const CardGroup = () => {
   const products = [
@@ -29,23 +31,25 @@ const CardGroup = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl font-bold font-mono text-yellow-900">
+        <h2 className="text-5xl font-bold font-mono text-yellow-900 animate__animated animate__flipInX">
           Customer Reviews
         </h2>
       </div>
       <br />
-      <div className="card-group mb-5 cardgroup-design">
+      <div className="card-group mb-5 cardgroup-design animate__animated animate__jackInTheBox">
         {products.map((product) => (
           <Card key={product.id} product={product}></Card>
         ))}
       </div>
       <div>
-        <button
-          type="button"
-          className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ... review-button bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ..."
-        >
-          See All Reviews
-        </button>
+        <Link to="/reviews">
+          <button
+            type="button"
+            className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ... review-button bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ..."
+          >
+            See All Reviews
+          </button>
+        </Link>
       </div>
     </div>
   );

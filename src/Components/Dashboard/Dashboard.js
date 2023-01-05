@@ -1,5 +1,6 @@
 import React from "react";
 import { Bar, BarChart, Line, LineChart, XAxis, YAxis } from "recharts";
+import "animate.css";
 
 const Dashboard = () => {
   const data = [
@@ -42,8 +43,8 @@ const Dashboard = () => {
   ];
   return (
     <div className="d-flex pt-20">
-      <div className="pl-40">
-        <h2 className="">Investment vs Revenue</h2>
+      <div className="pl-40 animate__animated animate__fadeInTopLeft">
+        <h2 className="animate__heartBeat">Investment vs Revenue</h2>
         <LineChart width={400} height={500} data={data}>
           <Line dataKey={"investment"}></Line>
           <XAxis dataKey={"revenue"}></XAxis>
@@ -51,8 +52,8 @@ const Dashboard = () => {
         </LineChart>
       </div>
 
-      <div className="pl-60 pt-20">
-        <h2>Sell vs Month</h2>
+      <div className="pl-60 pt-20 animate__animated animate__fadeInTopRight">
+        <h2 className="animate__heartBeat">Sell vs Month</h2>
         <BarChart width={400} height={300} data={data}>
           <XAxis dataKey={"month"}></XAxis>
           <YAxis dataKey={"sell"}></YAxis>
