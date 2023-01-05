@@ -12,7 +12,8 @@
 }
 .home{
     display: flex;
-    padding: 50px;
+    justify-content: center;
+    padding-top: 50px;
     
 }
 

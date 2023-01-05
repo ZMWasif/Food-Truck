@@ -31,7 +31,7 @@ const CardGroup = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl font-bold font-mono text-yellow-900 animate__animated animate__flipInX">
+        <h2 className="text-5xl font-bold font-mono text-yellow-900 animate__animated animate__flipInX pt-10">
           Customer Reviews
         </h2>
       </div>

@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Live Site Link: https://sage-licorice-c50029.netlify.app/reviews
+
 Here in this project:
 
 1. We have designed a website where you can find the food reviews of your favourite foods.

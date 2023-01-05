@@ -8,7 +8,7 @@ import "animate.css";
 const Home = () => {
   return (
     <div>
-      <div className="home">
+      <div className="home grid justify-items-center ...">
         <section>
           <img
             className="burger animate__animated animate__fadeInTopLeft"

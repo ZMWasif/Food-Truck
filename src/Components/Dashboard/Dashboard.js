@@ -42,23 +42,25 @@ const Dashboard = () => {
     },
   ];
   return (
-    <div className="d-flex pt-20">
-      <div className="pl-40 animate__animated animate__fadeInTopLeft">
-        <h2 className="animate__heartBeat">Investment vs Revenue</h2>
-        <LineChart width={400} height={500} data={data}>
-          <Line dataKey={"investment"}></Line>
-          <XAxis dataKey={"revenue"}></XAxis>
-          <YAxis dataKey={"investment"}></YAxis>
-        </LineChart>
-      </div>
+    <div className="grid justify-items-center ...">
+      <div className="d-flex pt-20">
+        <div className=" animate__animated animate__fadeInTopLeft">
+          <h2 className="animate__heartBeat">Investment vs Revenue</h2>
+          <LineChart width={400} height={500} data={data}>
+            <Line dataKey={"investment"}></Line>
+            <XAxis dataKey={"revenue"}></XAxis>
+            <YAxis dataKey={"investment"}></YAxis>
+          </LineChart>
+        </div>
 
-      <div className="pl-60 pt-20 animate__animated animate__fadeInTopRight">
-        <h2 className="animate__heartBeat">Sell vs Month</h2>
-        <BarChart width={400} height={300} data={data}>
-          <XAxis dataKey={"month"}></XAxis>
-          <YAxis dataKey={"sell"}></YAxis>
-          <Bar dataKey={"sell"} fill="#8884d8" barSize={30}></Bar>
-        </BarChart>
+        <div className="pt-20 animate__animated animate__fadeInTopRight">
+          <h2 className="animate__heartBeat">Sell vs Month</h2>
+          <BarChart width={400} height={300} data={data}>
+            <XAxis dataKey={"month"}></XAxis>
+            <YAxis dataKey={"sell"}></YAxis>
+            <Bar dataKey={"sell"} fill="#8884d8" barSize={30}></Bar>
+          </BarChart>
+        </div>
       </div>
     </div>
   );
